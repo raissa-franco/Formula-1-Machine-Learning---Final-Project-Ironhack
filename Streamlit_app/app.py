@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 # ============================
 # Load model + encoders
 # ============================
-model = joblib.load('Streamlit_app/model.pkl')  # saved model
+model = joblib.load('Streamlit_app/best_model.pkl')  # saved model
 encoders = joblib.load('Streamlit_app/label_enc.pkl')  # dictionary with LabelEncoders
 
 # For easier reading:

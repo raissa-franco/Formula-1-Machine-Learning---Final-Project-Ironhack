@@ -6,8 +6,8 @@ import plotly.graph_objects as go
 # ============================
 # Load model + encoders
 # ============================
-model = joblib.load('xgb_model.pkl')  # saved model
-encoders = joblib.load('label_encoders.pkl')  # dictionary with LabelEncoders
+model = joblib.load('Streamlit_app/xgb_model.pkl')  # saved model
+encoders = joblib.load('Streamlit_app/label_encoders.pkl')  # dictionary with LabelEncoders
 
 # For easier reading:
 le_constructor = encoders['constructorRef']

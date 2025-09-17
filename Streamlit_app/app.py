@@ -35,8 +35,11 @@ round_ = st.number_input("Season round", value=1)
 # ============================
 # Categorical inputs (LabelEncoder)
 # ============================
-driver = st.selectbox("Select driver", le_driver.classes_)
-surname_enc = le_driver.transform([driver])[0]
+driver_last = st.selectbox("Select driver last name", le_driver.classes_)
+surname_enc = le_driver.transform([driver_last])[0]
+
+driver_first = st.selectbox("Select driver first name", le_forename.classes_)
+forename_enc = le_forename.transform([driver_first])[0]
 
 constructor = st.selectbox("Select team", le_constructor.classes_)
 constructorRef_enc = le_constructor.transform([constructor])[0]
@@ -71,7 +74,8 @@ input_data = np.array([[
     driver_track_avg,
     round_,
     circuitRef_enc,
-    constructor_track_avg
+    constructor_track_avg,
+    forename_enc
 ]])
 
 # ============================

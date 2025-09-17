@@ -6,14 +6,15 @@ import plotly.graph_objects as go
 # ============================
 # Load model + encoders
 # ============================
-model = joblib.load('Streamlit_app/xgb_model.pkl')  # saved model
-encoders = joblib.load('Streamlit_app/label_encoders.pkl')  # dictionary with LabelEncoders
+model = joblib.load('Streamlit_app/model.pkl')  # saved model
+encoders = joblib.load('Streamlit_app/label_enc.pkl')  # dictionary with LabelEncoders
 
 # For easier reading:
 le_constructor = encoders['constructorRef']
 le_driver = encoders['surname']
 le_circuit = encoders['circuitRef']
 le_number = encoders['number']
+le_forename = encoders['forename']
 
 st.title("🏎️ Prediction: Driver in Top 10")
 st.markdown("Fill in the race information to predict if the driver will finish in the **Top 10**.")

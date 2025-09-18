@@ -30,7 +30,7 @@ constructor_races_before = st.number_input("Number of previous races for the tea
 pilot_age = st.number_input("Driver's age", value=25)
 driver_track_avg = st.number_input("Driver's average on this track", value=10.0)
 constructor_track_avg = st.number_input("Team's average on this track", value=10.0)
-round_ = st.number_input("Season round", value=1)
+round = st.number_input("Season round", value=1)
 
 # ============================
 # Categorical inputs (LabelEncoder)
@@ -60,22 +60,22 @@ driver_home_race = st.checkbox("Is this a home race for the driver?") * 1
 # Build input vector
 # ============================
 input_data = np.array([[
-    driver_avg_finish_before,
-    grid,
-    constructor_avg_finish_before,
-    constructor_home_race,
-    constructorRef_enc,
-    constructor_races_before,
-    driver_races_before,
-    surname_enc,
-    pilot_age,
-    driver_home_race,
-    number_enc,
-    driver_track_avg,
-    round_,
-    circuitRef_enc,
-    constructor_track_avg,
-    forename_enc
+number_enc,
+constructor_races_before,
+driver_avg_finish_before,
+driver_races_before,
+constructor_avg_finish_before,
+constructor_track_avg,
+driver_track_avg,
+grid,
+constructorRef_enc,
+surname_enc,
+round,
+circuitRef_enc,
+pilot_age,
+driver_home_race,
+constructor_home_race,
+forename_enc
 ]])
 
 # ============================

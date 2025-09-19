@@ -27,7 +27,6 @@ This project uses a consolidated dataset with results from over **27,000 races**
 ### 🌍 Potential Impact / Practical Applications
 
 - **F1 Teams**: Data-driven decision support based on race history and probability.
-- **Sports Analysts / Bettors**: Predictive insights into upcoming races.
 - **Data Scientists**: Hands-on experience with imbalanced, real-world sports data.
 
 ---
